@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("background.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* svg {
+    fill: white;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 50px;
+  } */
+
+.wrapper {
+  padding: 20px;
+  max-width: 450px;
+  background: rgba(241, 237, 237, 0.95);
+  box-shadow: 0 0 0 10px rgba(51, 48, 48, 0.9);
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+.plates {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  font-weight: 100;
+  display: flex;
+ 
+}
+
+.plates label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.plates input {
+  display: none;
+}
+
+.plates input + label:before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+.plates input:checked + label:before {
+  content: "🌮";
+}
+
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(216, 225, 231);
+  color: black;
+}
+
+button {
+  margin: 0.3rem;
+  padding: 10px;
+  outline: 0;
+  background: gray;
+  border: 1px solid rgba(20, 17, 17, 0.1);
+  cursor: pointer;
+  display: visible;
+  transition: all 0.5s ease-in;
+}
+button:hover {
+  background: rgb(139, 126, 126);
+}
+.visible {
+  display: none;
+}
+span {
+  padding-bottom:5px;
+}
+.btn-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+.btn-remove:hover {
+  background: none;
+  transition: all 0.175s ease-in-out;
+}
+.btn-wrapper {
+  padding-top: 10px;
+}
+
+/* This project is build with HTML5, CSS3, and Vanilla Javascript. Here you can add your favorite programming languages to your list. There are buttons to check all, unclear all and clear list. You can also remove each item by clicking the x sign next to the li. Here I am storing items to the local storage and removing them when the buttons are clicked. The data remains when the browser is refreshed. This project is a part of 30 days javascript challenge by Wes Bos.
