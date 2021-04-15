@@ -1,0 +1,2 @@
+This project is build with HTML5, CSS3, and Vanilla Javascript. Here you can add your favorite programming languages to your list. There are buttons to check all, unclear all and clear list. You can also remove each item by clicking the x sign next to the li. Here I am storing items to the local storage and removing them when the buttons are clicked. The data remains when the browser is refreshed. 
+Website URL : http://omisha.site/localstorage/
